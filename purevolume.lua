@@ -38,7 +38,7 @@ allowed = function(url, parenturl)
   end
 
   local tested = {}
-  for s in string.gmatch(testurl, "([^/]+)") do
+  for s in string.gmatch(url, "([^/]+)") do
     if tested[s] == nil then
       tested[s] = 0
     end
